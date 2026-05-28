@@ -447,8 +447,8 @@
   // =====================================================
   //  ⬇️  TEACHER: EDIT THESE TWO LINES ONLY  ⬇️
   // =====================================================
-  const GITHUB_USERNAME = 'aitips4teacherz-stack';   // e.g. 'mrsmith'
-  const GITHUB_REPO     = 'ClarksApps';  // e.g. 'class-apps'
+  const GITHUB_USERNAME = 'aitips4teacherz-stack';  // your GitHub username
+  const GITHUB_REPO     = 'ClarksApps';             // your repo name
   // =====================================================
 
   const EMBED_FOLDER = 'embed_files';
@@ -556,16 +556,16 @@
         <div class="preview-shimmer" id="shimmer-${index}"></div>
         <iframe
           id="iframe-${index}"
-          src="${fileUrl}"
+          src="${liveUrl}"
           title="${title} preview"
           loading="lazy"
-          sandbox="allow-scripts allow-same-origin"
+          sandbox="allow-scripts allow-same-origin allow-forms"
           onload="document.getElementById('shimmer-${index}').style.display='none'"
         ></iframe>
-        <div class="preview-overlay" onclick="window.open('${fileUrl}','_blank')" title="Open ${title}"></div>
+        <div class="preview-overlay" onclick="window.open('${liveUrl}','_blank')" title="Open ${title}"></div>
       </div>
       <div class="card-footer">
-        <a class="launch-btn" href="${fileUrl}" target="_blank" rel="noopener">
+        <a class="launch-btn" href="${liveUrl}" target="_blank" rel="noopener">
           🚀 Play ${title}!
         </a>
       </div>
